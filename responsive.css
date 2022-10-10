@@ -1,0 +1,98 @@
+@media  screen and (max-width:920px) {
+    .fa-bars{
+        display: block;
+    }
+    .home{
+        min-height: 80vh;
+    }
+    .navlist{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right:0;
+        flex-direction: column;
+        background: var(--main-color);
+        text-align: right;
+        transition: all .4s;
+    }
+    .navlist a{
+        display: block;
+        padding: 1.2rem;
+        margin: 1.5rem;
+        border-right: 2px solid var(--bg-color);
+        color: var(--bg-color);
+    }
+    .navlist a:hover{
+        background:var(--bg-color) ;
+        color: var(--main-color);
+    }
+    .navlist a::after{
+        display: none;
+    }
+    .navlist.active{
+        top: 100%;
+    }
+
+}
+@media screen and (max-width:800px) {
+    :root{
+        --big-font:3.4rem;
+        --h2-font:2rem;
+    }
+    .home{
+        grid-template-columns: 1fr;
+        min-height: 120vh;
+        grid-gap:1rem;
+    }
+    .home-text{
+        padding-top: 50px;
+    }
+    .home-img{
+        text-align: center;
+    }
+    .home-img img{
+        width: 420px;
+        height: auto;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:540px) {
+    .contact .action form input[type="email"]{
+        width: 300px;
+    }
+}
+@media screen and (max-width:425px) {
+    
+    
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+    section{
+        padding: 10px;
+    }
+    .home{
+        width: 100%;
+        min-height: auto;
+    }
+    .home-image img{
+        width: 340px;
+        object-fit: cover;
+    }
+    .about-img img{
+        width: 340px;
+        object-fit: cover;
+    }
+    .contact .action form input[type="email"]{
+        width: 250px;
+    }
+}
